@@ -25,3 +25,27 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# Install
+npm install primeng
+npm install primeicons
+npm install primeflex
+
+# Imports
+BrowserAnimationsModule,
+ReactiveFormsModule,
+HttpClientModule.
+// PrimeNg
+CardModule,
+InputTextModule,
+ButtonModule,
+ToastModule,
+
+"styles": [
+  "src/styles.scss",
+  "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+  "node_modules/primeng/resources/primeng.min.css",
+  "node_modules/primeicons/primeicons.css",
+  "node_modules/primeflex/primeflex.css"
+],
