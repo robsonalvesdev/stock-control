@@ -49,3 +49,7 @@ ToastModule,
   "node_modules/primeicons/primeicons.css",
   "node_modules/primeflex/primeflex.css"
 ],
+
+
+https://www.npmjs.com/package/ngx-cookie-service
+npm install ngx-cookie-service --save
