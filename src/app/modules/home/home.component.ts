@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { MessageService } from 'primeng/api';
 import { SignupUserRequest } from 'src/app/models/interfaces/user/SignupUserRequest';
@@ -29,7 +30,8 @@ export class HomeComponent {
     private formBuilder: FormBuilder,
     private userService: UserService,
     private cookieService: CookieService,
-    private messageService: MessageService
+    private messageService: MessageService,
+    private router: Router
   ) {}
 
   onSubmitLoginForm(): void {
@@ -44,7 +46,8 @@ export class HomeComponent {
             summary: 'Sucesso',
             detail: `Bem vindo de volta ${response.name}!`,
             life: 2000
-          })
+          });
+          this.router.navigate(['/dashboard']);
         },
         error: (err) => {
           this.messageService.add({
