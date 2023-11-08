@@ -53,3 +53,6 @@ ToastModule,
 
 https://www.npmjs.com/package/ngx-cookie-service
 npm install ngx-cookie-service --save
+
+
+ng generate module dashboard
