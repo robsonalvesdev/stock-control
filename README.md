@@ -56,3 +56,6 @@ npm install ngx-cookie-service --save
 
 
 ng generate module dashboard
+
+
+npm install chart.js --save

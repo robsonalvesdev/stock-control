@@ -5,12 +5,14 @@ import { DashboardHomeComponent } from './page/dashboard-home/dashboard-home.com
 import { SidebarModule } from 'primeng/sidebar'
 import { ButtonModule } from 'primeng/button'
 import { ToolbarModule } from 'primeng/toolbar'
+import { ChartModule } from 'primeng/chart'
 import { RouterModule } from '@angular/router';
 import { DASHBOARD_ROUTES } from './dashboard.routing';
 import { CardModule } from 'primeng/card';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { CookieService } from 'ngx-cookie-service';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -27,7 +29,9 @@ import { CookieService } from 'ngx-cookie-service';
     ButtonModule,
     ToolbarModule,
     CardModule,
-    ToastModule
+    ToastModule,
+    ChartModule,
+    SharedModule
   ],
   providers: [MessageService, CookieService]
 })
